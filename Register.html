@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup Page</title>
+        <meta name="viewport" content="width=device-width,initial-scale1">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: url("loginbg.jpg");
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            *{box-sizing: border-box;}
+
+            .input-container {
+                display: flex;
+                width: 100%;
+                margin-bottom: 20px;             
+            }
+
+            .icon{
+                padding: 10px;
+                background-color: dodgerblue;
+                color: white;
+                min-width: 50px;
+                text-align: center;                
+            }
+
+            img{
+            width: 170px;
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .input-field{
+                width: 100%;
+                padding: 10px;
+                outline: none;
+            }
+            
+            .input-field:focus{
+                border: 2px solid dodgerblue;
+            }
+
+            .btn{
+                background-color: dodgerblue;
+                color: white;
+                padding: 15px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.8;
+            }
+
+            .btn:hover{
+                opacity: 1;
+            }
+
+            span.already{            
+            text-align:center;
+            color: cyan;
+            }
+
+            a:link, a:visited{
+                text-decoration: none;
+                color: white;
+            }
+   
+            form{
+            height: 550px;
+            width: 350px;
+            background-color: rgba(77, 199, 247, 0.13);
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border: 2px solid rgba(39, 230, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8,7,16,0.6);
+            padding: 20px 15px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <form>
+            <img src="signup.png" alt="signup.png">
+
+            <div class="input-container">
+                <i class="fas fa-user icon"></i>
+                <input class="input-field"
+                type="text"
+                placeholder="Full Name"
+                name="usrnm">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-mobile icon"></i>
+                <input class="input-field"
+                type="number"
+                placeholder="Mobile-No"
+                name="mobno">
+            </div>
+
+            <div class="input-container">
+                <i class="far fa-envelope icon"></i> 
+                <input class="input-field"
+                type="text"
+                placeholder="Email"
+                name="email">
+            </div>
+            
+            <div class="input-container">
+                <i class="fas fa-key icon"></i>
+                <input class="input-field"
+                type="text"
+                placeholder="Password"
+                name="psw">
+            </div>   
+            <div class="input-container">
+                <i class="fas fa-key icon"></i>
+                <input class="input-field"
+                type="text"
+                placeholder="Re-Enter password"
+                name="psw">
+            </div>               
+            
+            <button type="submit" class="btn"><b>Sign up</b></button><br><br>
+            
+            <span class="already">Already have an account?<a href="log.html">  Login</a></span>
+
+        </form>  
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <style>
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-image: url("loginbg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position: center; 
+        }
+        input[type=text],input[type=password]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display:inline-block;
+            border:1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .button {
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 2px 4px;
+        }
+        .imgcontainer{
+            text-align: center;
+            margin: 24px 12px;
+        }
+        .logicon{
+            width: 200px;
+            border-radius: 50px;
+        }
+        .button1 {
+            background-color: rgb(85, 73, 255);
+        }
+        .button1:hover{
+            opacity: 0.8;
+        }
+        .button2 {
+            background-color: rgb(26, 223, 0);
+        }
+        .button2:hover{
+            opacity: 0.7;
+        }
+        .container{
+            padding: 16px;
+            color: rgb(255, 255, 255);
+        }
+        span.forget{            
+            text-align:center;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }    
+        .container1{
+            padding: 16px;
+            text-align:center;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+        }
+        img{
+            width: 115px;
+            height: 100px;
+            display: block;
+            margin: auto;
+        }
+        form{
+            height: 550px;
+            width: 350px;
+            background-color: rgba(77, 199, 247, 0.13);
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border: 2px solid rgba(39, 230, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8,7,16,0.6);
+            padding: 20px 15px;
+        }
+        
+    </style>
+
+    <body>
+
+        <div class="image"></div>
+
+    <form  method="post">
+
+        <h2 class="font-effect-neon">Login your account</h2>
+
+        <img src="loginicon.png" alt="logpng">
+       
+        <div class="container" >
+                <b>User Name</b>
+                <input type="text"
+                placeholder="Enter User Name"required>
+                <b>Password</b>
+                <input type="password"
+                placeholder="Enter Password"required>
+        </div>
+
+    <div class="container1">
+        <input class="button button1" type="submit" value="Log In"><br><br>       
+        <span class="forget"><a href="#">Forget password?</a></span><br><hr>
+        <a href="Register.html"><button class="button button2" type="button"> Sign up</button></a>
+    </div>
+
+    </form>
+
+    </body>
+</html>
